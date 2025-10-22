@@ -3,48 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GrabbestdealswithAI</title>
-  <style>
-    body {
-      font-family: system-ui;
-      max-width: 700px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      line-height: 1.6;
-    }
-    h1 { font-size: 2rem; }
-    .deal {
-      border: 1px solid #ddd;
-      padding: 1.5rem;
-      margin: 1.5rem 0;
-      border-radius: 8px;
-    }
-    .price {
-      font-size: 1.5rem;
-      color: #22c55e;
-      font-weight: bold;
-    }
-  </style>
+  <title>GrabbestdealswithAI | Find Best Deals in India</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Curated Deals, Optimized by AI</h1>
-  <p>We use agentic AI to discover high-value products, craft scroll-stopping pins, and update picks in real time.</p>
+  <div class="container">
+    <header>
+      <h1>Find the Best Deal in India 🇮🇳</h1>
+      <p>Compare prices across Amazon, Flipkart & more. AI-powered. Human-verified.</p>
+    </header>
 
-  <div class="deal">
-    <h2>Today’s Pick: boAt Airdopes 141</h2>
-    <p>🔥 Just ₹1299 (71% off)! ⭐ 4.2★ on Amazon India</p>
-    <a href="https://www.amazon.in/dp/B09N3ZNHTY/?tag=neurostart-21" target="_blank">
-      Check Price →
-    </a>
+    <section class="search-box">
+      <form id="searchForm">
+        <div class="input-group">
+          <label>What are you looking for?</label>
+          <input type="text" id="query" placeholder="e.g. wireless earbuds, desk lamp" required />
+        </div>
+        <div class="input-group">
+          <label>Max Budget (₹)</label>
+          <input type="number" id="budget" placeholder="e.g. 2000" required />
+        </div>
+        <button type="submit">Find Best Deals →</button>
+      </form>
+    </section>
+
+    <section id="results" class="results"></section>
+
+    <section class="alert-box">
+      <h3>Get Price Drop Alerts</h3>
+      <p>We’ll email you if any of these drop below your budget.</p>
+      <form id="alertForm">
+        <input type="email" id="alertEmail" placeholder="you@email.com" required />
+        <button type="submit">Notify Me</button>
+      </form>
+      <div id="alertSuccess" class="success-message">✅ Alert saved!</div>
+    </section>
+
+    <footer>
+      <p><strong>How it works:</strong> AI scans trends → We verify value → You save money.</p>
+      <p><em>Disclosure: We earn commission via affiliate links. Prices may change.</em></p>
+    </footer>
   </div>
 
-  <h2>How It Works</h2>
-  <ul>
-    <li>AI scans trends & product data</li>
-    <li>We verify every product</li>
-    <li>Pins published to Pinterest at peak times</li>
-  </ul>
-
-  <p><small>Disclosure: We earn commission via affiliate links. Prices may change.</small></p>
+  <script src="script.js"></script>
 </body>
 </html>
